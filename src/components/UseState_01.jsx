@@ -18,6 +18,7 @@ const HookState = () => {
             <p>Valor:{valor}</p>
             <button onClick={diminuir}>Diminuir</button>
             <button onClick={aumentar}>Aumentar</button>
+            <p>Lorem, ipsum dolor.</p>
         </>
     )
 }
