@@ -1,26 +1,39 @@
-import { useState } from "react"
+import { useState } from 'react';
+import IncrementDecrement from './IncrementDecrement';
 
-const HookState = () => {
+const Main = () => {
+  // Estado que mantém os valores numéricos
+  const [values, setValues] = useState([0, 0, 0]);
 
-    const [valor, setValor] = useState(0);
+  // Função para atualizar o valor no índice específico
+  const updateValue = (index, delta) => {
+    const newValues = [...values];
+    newValues[index] += delta;
+    setValues(newValues);
+  };
 
-    function diminuir(){
-        setValor(v => v - 1)
-    }
+  return (
+    <div>
+      <h1>Incremento e Decremento com 3 Valores</h1>
+      <div>
+        {/* Passando o valor atual e a função de atualização para cada filho */}
+        {values.map((value, index) => (
+          <IncrementDecrement
+            key={index}
+            index={index}
+            value={value}
+            updateValue={updateValue}
+          />
+        ))}
+      </div>
+      <div>
+        <h2>Valores Atuais:</h2>
+        <p>{`Valor 1: ${values[0]}`}</p>
+        <p>{`Valor 2: ${values[1]}`}</p>
+        <p>{`Valor 3: ${values[2]}`}</p>
+      </div>
+    </div>
+  );
+};
 
-    function aumentar(){
-        setValor(v => v + 1)
-    }
-
-    return (
-        <>
-            <h4>useState</h4>
-            <p>Valor:{valor}</p>
-            <button onClick={diminuir}>Diminuir</button>
-            <button onClick={aumentar}>Aumentar</button>
-            <p>Lorem, ipsum dolor.</p>
-        </>
-    )
-}
-
-export default HookState
+export default Main;
