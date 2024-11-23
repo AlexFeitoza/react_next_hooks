@@ -3,7 +3,8 @@
 //import HookState02 from "./components/UseState_02"
 //import HookState03 from "./components/UseState_03"
 //import HookState04 from "./components/UseState_04"
-import HookState08 from "./components/UseState_08"
+//import HookState08 from "./components/UseState_08"
+import HookState09 from "./components/UseState_09"
 
 
 
@@ -20,7 +21,8 @@ const App = () => {
           {/*<HookState05 /> */}
           {/*<HookState06 /> */}
           {/*<HookState07 /> */}
-          <HookState08 />
+          {/*<HookState08 /> */}
+          <HookState09 />
         </>
     )
 }
