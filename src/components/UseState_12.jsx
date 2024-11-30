@@ -6,15 +6,11 @@ const HookState12 = () => {
 
     const [state,setState] = useState(true);
 
-    const componentA = () => <UseState12a/>
-    const componentB = () => <UseState12b/>
-
     return(
         <>
             <h3>Exercicio 12 / Conditonal Rendering</h3>
             <button onClick={() => setState(!state)}>Alterar Componente</button>
-            {state ? componentA() : componentB()}
-            
+            {state ? <UseState12a/> : <UseState12b/>}
         </>
     );
 };
