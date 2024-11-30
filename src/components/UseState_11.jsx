@@ -10,7 +10,7 @@ const HookState11 = () => {
     return(
 
         <>
-            <h3>Exercício 11 - Conditional Rendering </h3>
+            <h3>Exercício 11 - Conditional Rendering - Change CSS class</h3>
             <button onClick={() => setState(!state)}>Alterar</button>
             <p className={`paragrafo ${state ? class1 : class2}`}>Deus é Fiel! Todo tempo.</p>
         </>
