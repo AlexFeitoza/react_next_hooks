@@ -7,8 +7,9 @@
 //import HookState10 from "./components/UseState_10"
 //import HookState11 from "./components/UseState_11"
 //import HookState14 from "./components/UseState_14"
-import HookState15 from "./components/UseState_15"
-import HookRef16 from "./components/UseRef_16"
+//import HookState15 from "./components/UseState_15"
+//import HookRef16 from "./components/UseRef_16"
+import HookEffect17 from "./components/UseEffect_17"
 
 const App = () => {
 
@@ -27,8 +28,9 @@ const App = () => {
           {/*<HookState10 /> */}
           {/*<HookState13 /> */}
           {/*<HookState14 /> */}
-          <HookState15 />
-          <HookRef16 />
+          {/*<HookState15 /> */}
+          {/*<HookRef16 /> */}
+          <HookEffect17 />
         </>
     )
 }
