@@ -2,7 +2,7 @@ import { useRef } from "react"
 
 const HookRef16 = () => {
 
-    const valor = useRef(10)
+    const valor = useRef(0)
 
     
 
