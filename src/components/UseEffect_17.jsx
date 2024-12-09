@@ -9,6 +9,10 @@ const HookEffect17 = ()=> {
         setValor(valor  + 1)
     }
 
+    function alterarNome() {
+        setNome('Alex Feitoza')
+    }
+
     useEffect(()=> {
         console.log('componente iniciado')
     },[])
@@ -25,9 +29,7 @@ const HookEffect17 = ()=> {
         console.log('quando qualquer um dos dois for clicado')
     },[valor, nome])
 
-    function alterarNome() {
-        setNome('Alex Feitoza')
-    }
+    
 
         return(
             <>
