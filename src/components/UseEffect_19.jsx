@@ -17,7 +17,7 @@ const HookEffect19 = () => {
         <>
             <h3>UseEffect - 03 </h3>
             <ul>
-                {paises.map(pais => <li>{pais.name.common}</li>)}
+                {paises.map(pais => <li key={pais.cca2}>{pais.name.common}</li>)}
             </ul>
         </>
     )
