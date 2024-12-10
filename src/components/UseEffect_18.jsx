@@ -16,9 +16,7 @@ const HookEffect18 = () => {
             renderInicial.current = false;
         } else {
             console.log('código executado apenas quando o VALOR é alterado')
-        }
-
-       
+        }   
     },[valor])
 
     return(
